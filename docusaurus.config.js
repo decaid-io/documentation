@@ -16,7 +16,15 @@ const config = {
   favicon: 'img/favicon.png',
   organizationName: 'decaid.io', // Usually your GitHub org/user name.
   projectName: 'decaid-docs', // Usually your repo name.
-
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en',
+      },
+    },
+  },
   presets: [
     [
       'classic',

@@ -1,5 +1,10 @@
 import React from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 export default function Home() {
-  window.location.href = '/docs/intro';
-  return <></>;
+  return (
+    <BrowserOnly>
+      {() => window.location.href = '/docs/intro'}
+    </BrowserOnly>
+  );
 }
